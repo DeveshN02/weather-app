@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Appication</title>
+    <link rel="shortcut icon" href="location image.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <div class="container">
+
+        <!-- heading -->
+        <h1>Weather Application</h1>
+
+        <!-- switch Bar -->
+        <div class="switch-bar">
+          <p id="my-weather-button">My Weather</p>
+          <p id="search-button">Search By Location</p>
+        </div>
+         
+       <!-- weather-box -->
+      <div class="weather-box">
+
+         <!-- access location box -->
+         <div id="location-box" class="location">
+            <img src="location image.png" loading="lazy" height="100" width="100" >
+            <h2>Grant Location Access</h2>
+            <p>Allow To Access Your Location</p>
+            <button grant-access>Allow</button>
+        </div>
+
+        <!-- search weather -->
+        <div id="search-box" class="search-weather">
+          <form id="inputform">
+            <input id="data-search-input" type="text" placeholder="Enter City Name">
+            <button id="input-button" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          </form>
+      </div>
+
+
+        <!-- default-weather -->
+        <div id="home-weather-page" class="my-weather">
+            <!-- city name -->
+            <div class="city">
+                <h2 cityname></h2>
+                <img country-Icon height="28" width="28">
+            </div>
+            
+            <!-- discription -->
+            <h3 data-desc></h3>
+ 
+            <!-- weather icon -->
+           <img  weather-icon height="80" width="80">
+
+           <!-- temperature -->
+           <p temp ></p>
+            
+
+           <!-- weather cards -->
+           <div class="card">
+              <div class="box">
+                <!-- logo -->
+                  <img src="wind.jpg" height="45" width="45">
+
+                  <!-- wind -->
+                  <p >Wind</p>
+
+                  <!-- value -->
+                  <span wind-speed></span>
+
+
+              </div>
+
+              <div class="box">
+                <!-- logo -->
+                  <img src="humidity.png" height="45" width="45" >
+
+                  <!-- humidity -->
+                  <p>Humidity</p>
+                  
+                  <!-- value -->
+                  <span humidity></span>
+
+
+              </div>
+
+              <div class="box">
+                <!-- logo -->
+                  <img src="cloud.jpg" height="45" width="45" >
+
+                  <!-- clouds -->
+                  <p>Cloud</p>
+                  
+                  <!-- value -->
+                  <span cloud></span>
+
+
+              </div>
+
+           </div>
+
+        </div>
+
+        
+        <!-- loading page -->
+        <div class="loading-page">
+            <img  src="https://i.gifer.com/ZNeT.gif" alt="gif" height="75" width="75">
+            <p>Loading...</p>
+        </div>
+
+
+      </div>
+        
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
